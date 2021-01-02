@@ -1,0 +1,27 @@
+[{ 
+    "name": "dune",
+    "image": "/dune.jpg",
+    "url": "/dune"
+},{
+    "name": "flies",
+    "image": "/flies.jpg",
+    "url": "/flies"
+
+},{
+    "name": "grapes",
+    "image": "/grapes.jpg",
+     "url": "/grapes"
+},{
+    "name": "leaves",
+    "image": "/leaves.jpg",
+    "url": "/leaves"
+},{
+    "name": "mockingbird",
+    "image": "/mockingbird.jpg",
+    "url": "/mockingbird"
+},{
+    "name": "sun",
+    "image": "/sun.jpg",
+    "url": "/sun"
+    }
+]

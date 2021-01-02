@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+            body{
+  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("background1.jpg");
+    background-size: cover;
+}
+
+.cont{
+    width: 320px;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.486);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 3px 15px 22px 6px rgba(0,0,0,0.75);
+}
+.cont .user{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px / 2);
+    left: calc(50% - 50px); 
+}
+.cont h2{
+    color: #FBC02D;
+    margin-top: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+form label , form input{
+    display: block;
+    margin-left: 10px;
+}
+form h6{
+    margin: 10px 6px;
+}
+form label{
+    color: #FFEB3B;
+    font-weight: 700;
+    margin: 10px 10px 0px;
+}
+form input{
+    width: 90%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #FFC107;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+form button{
+    display: block;
+    width: 80%;
+    text-align: center;
+    background: #FFEB3B;
+    color: #fff;
+    padding: 10px 0;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    margin: 10px auto;
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+form button:hover{
+    background: #FFF9C4;
+    color: #212121;
+}
+.login{
+    color: #FFF9C4;
+    margin: 50px 70px;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+    </div>
+    <div class="cont">
+        <h2>Register</h2>
+        <form method='post' action='/register'>
+            <label>Username</label>
+            <input id="user" type="text" name="username" placeholder="Enter your name">
+            <label>User Password</label>
+            <input id="password" type="password" name="password" placeholder="Enter Your Password">
+            <h6 style="color:red"><%-valid%></h6>
+            <button  type="submit">Register</button>
+           <a  href="/" class="login">Already have an account </a> 
+        </form>
+    </div>
+    
+</body>
+
+</html>
